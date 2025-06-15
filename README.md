@@ -12,7 +12,6 @@ A fully-featured Python chess engine and GUI that supports all legal moves, comp
 -  Full legal move generation (castling, en passant, pawn promotion)
 -  AI with **negamax** and **alpha‑beta pruning**
 -  Move ordering for improved pruning efficiency
--  Move ordering for improved pruning efficiency
 -  Evaluation using:
       - Piece values
       - Piece‑square tables

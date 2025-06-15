@@ -201,9 +201,9 @@ def scoreBoard(gs):
                 piecePositionScore = 0
 
                 if square[1] == 'K':
-                    piecePositionScore = piecePositionScores["K"][row][col]
+                    piecePositionScore = piecePositionScores["K"][row][col] if square[0] == 'w' else piecePositionScores["K"][7 - row][col]
                 elif square[1] == 'p':
-                    piecePositionScore = piecePositionScores["p"][row][col]
+                    piecePositionScore = piecePositionScores["p"][row][col] if square[0] == 'w' else piecePositionScores["p"][7 - row][col]
 
                 if square[0] == 'w':
                     score += pieceScores[square[1]]*10 + (piecePositionScore * 0.0003)
